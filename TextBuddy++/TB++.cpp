@@ -111,7 +111,7 @@ void TextBuddy:: clearAll(){
 void TextBuddy:: sortFile(){
 
 	std::sort(text.begin(),text.end());  
-	cout<<MESSAGE_ALL_SORTED; 
+	cout<<MESSAGE_ALL_SORTED<<endl; 
 
 }
 

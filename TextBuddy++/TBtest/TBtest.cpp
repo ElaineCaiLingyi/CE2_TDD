@@ -38,11 +38,13 @@ namespace TBtest {
 			tb.text.push_back("elephant");
 			tb.text.push_back("hedgehog");
 			
+			//mannually rearranged
 			string expected0="cat";
 			string expected1="dog";
 			string expected2="elephant";
 			string expected3="hedgehog";
 			string expected4="monkey";
+			string expected5="monkeyy";
 
 			//test case 1
 			tb.sortFile();
@@ -55,6 +57,9 @@ namespace TBtest {
 			//test case 2
 			string expected="All lines are sorted alphabetically";
 			Assert::AreEqual(expected, tb.MESSAGE_ALL_SORTED);
+
+			//test case 3
+			Assert::AreEqual(expected5,tb.text[5]);
 		
 		}
 

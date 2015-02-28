@@ -1,6 +1,4 @@
-aaaaa
-b
-c
-f
-ooo
-ppp
+0
+a
+x
+8
