@@ -120,17 +120,17 @@ string TextBuddy:: searchFile(string word){
 	int count=0; size_t found;
 	ostringstream oss;
 
-	for (int i=0;i<text.size();i++){
-		found=0;
+	for (int i=0;i<_numberoflines;i++){
 		found=text[i].find(word);
 		if(found!=string::npos) {
 			count++;
 			oss<<text[i]<<endl;
+			break;
 		}
 	}
 
 	if (count==0){
-		return "The word cannot be found\n";
+		return "The word cannot be found";
 	}
 	else { 
 		return oss.str();
@@ -193,7 +193,7 @@ void TextBuddy:: executeCommand(string command){
 		case 7: {
 			string word;
 			cin>>word;
-			cout<<searchFile(word); 
+			searchFile(word); 
 		}
 			break;
 		default: cout<<MESSAGE_INVALID_ENTRY<<endl;

@@ -1,9 +1,6 @@
-﻿Build started 2/28/2015 5:56:39 PM.
+﻿Build started 2/28/2015 5:26:04 PM.
      1>Project "C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\TBtest\TBtest.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Lai ling Yi\Documents\CS2103\TextBuddy++" /I"C:\Program Files\Microsoft Visual Studio 11.0\VC\UnitTest\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\TBtest.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /FC /errorReport:prompt TBtest.cpp
-         TBtest.cpp
-       Link:
+     1>Link:
          C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\Debug\TBtest.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\Microsoft Visual Studio 11.0\VC\UnitTest\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\Debug\TBtest.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\Debug\TBtest.lib" /MACHINE:X86 /DLL Debug\stdafx.obj
          Debug\TBtest.obj
          "C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\Debug\TextBuddy++.lib"
@@ -13,4 +10,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.14
+Time Elapsed 00:00:01.16

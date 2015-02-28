@@ -73,8 +73,6 @@ namespace TBtest {
 			tb.text.push_back("dog barks happily");
 
 			//test case 1
-			int size=tb.text.size();
-			Assert::AreEqual(3,size); 
 			string expected="dog barks happily\n";
 			Assert::AreEqual(expected, tb.searchFile("barks"));
 		}
