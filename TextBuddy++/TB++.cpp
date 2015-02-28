@@ -118,16 +118,23 @@ void TextBuddy:: sortFile(){
 string TextBuddy:: searchFile(string word){
 	
 	int count=0; size_t found;
+	ostringstream oss;
+
 	for (int i=0;i<_numberoflines;i++){
 		found=text[i].find(word);
 		if(found!=string::npos) {
 			count++;
-			cout<<text[i];
+			oss<<text[i]<<endl;
 			break;
 		}
 	}
 
-	return "dog barks happily";		
+	if (count==0){
+		return "The word cannot be found";
+	}
+	else { 
+		return oss.str();
+	}
 }
 
 

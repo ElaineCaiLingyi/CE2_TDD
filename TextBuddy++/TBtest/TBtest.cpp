@@ -73,7 +73,7 @@ namespace TBtest {
 			tb.text.push_back("dog barks happily");
 
 			//test case 1
-			string expected="dog barks happily";
+			string expected="dog barks happily\n";
 			Assert::AreEqual(expected, tb.searchFile("barks"));
 		}
 
