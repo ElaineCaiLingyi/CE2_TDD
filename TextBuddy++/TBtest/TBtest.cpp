@@ -64,7 +64,7 @@ namespace TBtest {
 		
 		}
 
-		TEST_METHOD(SearchTest){
+		TEST_METHOD(SearchTest) {
 		
 			//assuming that the user inputs are all in lower cases
 			TextBuddy tb("Filename.txt");

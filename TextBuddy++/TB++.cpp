@@ -62,7 +62,7 @@ TextBuddy:: TextBuddy(string filename){
 TextBuddy:: ~TextBuddy(){
 }
 
-void TextBuddy::addLine(){
+void TextBuddy:: addLine(){
 	
 	string input;
 	getline(cin,input);
@@ -186,8 +186,8 @@ void TextBuddy:: executeCommand(string command){
 		}
 			break;
 		case 5: {
-			 writeFile();
-			 exit(1);
+			writeFile();
+			exit(1);
 		}
 			break;
 		case 6: {
