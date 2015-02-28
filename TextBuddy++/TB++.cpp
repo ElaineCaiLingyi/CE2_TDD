@@ -135,6 +135,9 @@ void TextBuddy:: identifyCommandType(string command){
 	else if (command=="exit"){
 		_switchcase=5;
 	}
+	else if (command=="sort"){
+		_switchcase=6;
+	}
 }
 
 void TextBuddy:: executeCommand(string command){
@@ -143,11 +146,11 @@ void TextBuddy:: executeCommand(string command){
 	switch (_switchcase) {
 		case 1: {
 			addLine();
-			}
+		}
 			break;
 		case 2: {
 			deleteLine();
-			}
+		}
 			break;
 	    case 3: displayAll();
 			break;
@@ -156,7 +159,11 @@ void TextBuddy:: executeCommand(string command){
 		case 5: {
 			 writeFile();
 			 exit(1);
-			}
+		}
+			break;
+		case 6: {
+			sortFile(); 
+		}
 			break;
 		default: cout<<MESSAGE_INVALID_ENTRY<<endl;
   }
