@@ -68,20 +68,20 @@ namespace TBtest {
 		
 			//assuming that the user inputs are all in lower cases
 			TextBuddy tb("Filename.txt");
-			tb.text.push_back("cat says: meow I wanna eat fish");
+			tb.text.push_back("cat wanna eat fish");
 			tb.text.push_back("monkey climbs over the tree");
 			tb.text.push_back("dog barks happily");
 
 			//test case 1 -> same word appears in only one sentence
 			int size=tb.text.size();
 			Assert::AreEqual(3,size); 
-			string expected1="dog barks happily\n";
+			string expected1="1. dog barks happily\n";
 			Assert::AreEqual(expected1, tb.searchFile("barks"));
 
 			//test case 2 -> same word appears in multiple sentences
 			tb.text.push_back("cat cat");
 			tb.text.push_back("kitty is cat");
-			string expected2="cat says: meow I wanna eat fish\ncat cat\nkitty is cat\n";
+			string expected2="1. cat wanna eat fish\n2. cat cat\n3. kitty is cat\n";
 			Assert::AreEqual(expected2, tb.searchFile("cat"));
 
 			//test case 3 -> the word does not exit in the file

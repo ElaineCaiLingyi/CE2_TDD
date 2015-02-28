@@ -125,7 +125,7 @@ string TextBuddy:: searchFile(string word){
 		found=text[i].find(word);
 		if(found!=string::npos) {
 			count++;
-			oss<<text[i]<<endl;
+			oss<<count<<". "<<text[i]<<endl;
 		}
 	}
 
