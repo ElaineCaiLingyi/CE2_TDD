@@ -43,7 +43,7 @@ namespace TBtest {
 			//test case 1
 			tb.sortFile();
 			Assert::AreEqual(expected0,tb.text[0]);
-			Assert::AreEqual(expected1,tb.text[0]);
+			Assert::AreEqual(expected1,tb.text[1]);
 
 		
 		}
