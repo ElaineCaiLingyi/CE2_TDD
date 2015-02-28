@@ -39,11 +39,17 @@ namespace TBtest {
 			
 			string expected0="cat";
 			string expected1="dog";
+			string expected2="elephant";
+			string expected3="hedgehog";
+			string expected4="monkey";
 
 			//test case 1
 			tb.sortFile();
 			Assert::AreEqual(expected0,tb.text[0]);
 			Assert::AreEqual(expected1,tb.text[1]);
+			Assert::AreEqual(expected2,tb.text[2]);
+			Assert::AreEqual(expected3,tb.text[3]);
+			Assert::AreEqual(expected4,tb.text[4]);
 
 		
 		}
