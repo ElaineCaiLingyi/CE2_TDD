@@ -15,6 +15,7 @@ and when the user exit the program. (double confirm)
 const string TextBuddy:: MESSAGE_COMMAND = "command: ";
 const string TextBuddy:: MESSAGE_INVALID_ENTRY = "ERROR: Invalid entry";
 const string TextBuddy:: MESSAGE_ERROR_DELETE = "ERROR: Cannot delete as it does not exist";
+const string TextBuddy:: MESSAGE_ALL_SORTED = "All lines are sorted alphabetically";
 
 string TextBuddy:: MESSAGE_LINE_ADDED(string input){
 
@@ -108,6 +109,7 @@ void TextBuddy:: clearAll(){
 void TextBuddy:: sortFile(){
 
 	std::sort(text.begin(),text.end());  
+	cout<<MESSAGE_ALL_SORTED; 
 
 }
 

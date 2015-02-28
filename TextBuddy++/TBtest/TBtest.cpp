@@ -52,7 +52,8 @@ namespace TBtest {
 			Assert::AreEqual(expected4,tb.text[4]);
 
 			//test case 2
-			Assert::AreEqual("All lines are sorted alphabetically", tb.MESSAGE_ALL_SORTED);
+			string expected="All lines are sorted alphabetically";
+			Assert::AreEqual(expected, tb.MESSAGE_ALL_SORTED);
 		
 		}
 
