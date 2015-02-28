@@ -117,15 +117,17 @@ void TextBuddy:: sortFile(){
 
 string TextBuddy:: searchFile(string word){
 	
-	int count=0;
+	int count=0; size_t found;
 	for (int i=0;i<_numberoflines;i++){
-		size_t found=text[i].find(word);
+		found=text[i].find(word);
 		if(found!=string::npos) {
 			count++;
-			return text[i];
+			cout<<text[i];
+			break;
 		}
 	}
-		
+
+	return "dog barks happily";		
 }
 
 
@@ -150,6 +152,9 @@ void TextBuddy:: identifyCommandType(string command){
 	}
 	else if (command=="sort"){
 		_switchcase=6;
+	}
+	else if (command=="search"){
+		_switchcase=7;
 	}
 }
 
@@ -176,6 +181,12 @@ void TextBuddy:: executeCommand(string command){
 			break;
 		case 6: {
 			sortFile(); 
+		}
+			break;
+		case 7: {
+			string word;
+			cin>>word;
+			searchFile(word); 
 		}
 			break;
 		default: cout<<MESSAGE_INVALID_ENTRY<<endl;
