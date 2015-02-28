@@ -75,8 +75,6 @@ namespace TBtest {
 			//test case 1
 			string expected="dog barks happily";
 			Assert::AreEqual(expected, tb.searchFile("bark"));
-
-		
 		}
 
 	};
