@@ -80,8 +80,8 @@ namespace TBtest {
 
 			//test case 2 -> same word appears in multiple sentences
 			tb.text.push_back("cat cat");
-			tb.text.push_back("kitty is cat");
-			string expected2="1. cat wanna eat fish\n2. cat cat\n3. kitty is cat\n";
+			tb.text.push_back("kittycat");
+			string expected2="1. cat wanna eat fish\n2. cat cat\n3. kittycat\n";
 			Assert::AreEqual(expected2, tb.searchFile("cat"));
 
 			//test case 3 -> the word does not exit in the file
