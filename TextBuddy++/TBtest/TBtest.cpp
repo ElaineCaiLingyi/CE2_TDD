@@ -72,9 +72,21 @@ namespace TBtest {
 			tb.text.push_back("monkey climbs over the tree");
 			tb.text.push_back("dog barks happily");
 
-			//test case 1
-			string expected="dog barks happily\n";
-			Assert::AreEqual(expected, tb.searchFile("barks"));
+			//test case 1 -> same word appears in only one sentence
+			int size=tb.text.size();
+			Assert::AreEqual(3,size); 
+			string expected1="dog barks happily\n";
+			Assert::AreEqual(expected1, tb.searchFile("barks"));
+
+			//test case 2 -> same word appears in multiple sentences
+			tb.text.push_back("cat cat");
+			tb.text.push_back("kitty is cat");
+			string expected2="cat says: meow I wanna eat fish\ncat cat\nkitty is cat\n";
+			Assert::AreEqual(expected2, tb.searchFile("cat"));
+
+			//test case 3 -> the word does not exit in the file
+			string expected3="The word cannot be found\n";
+			Assert::AreEqual(expected3, tb.searchFile("sunshine"));
 		}
 
 	};
