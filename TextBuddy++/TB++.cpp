@@ -106,6 +106,7 @@ void TextBuddy:: clearAll(){
 	writeFile();
 }
 
+//assumption: all the lines the user entered are in lower cases.
 void TextBuddy:: sortFile(){
 
 	std::sort(text.begin(),text.end());  
