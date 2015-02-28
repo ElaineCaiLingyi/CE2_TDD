@@ -1,31 +1,17 @@
-﻿Build started 2/28/2015 2:33:35 PM.
+﻿Build started 2/28/2015 4:48:05 PM.
      1>Project "C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\TextBuddy++\TextBuddy++.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\TB++.cpp
          TB++.cpp
      1>c:\users\lai ling yi\documents\github\ce2_tdd\textbuddy++\tb++.cpp(81): warning C4018: '>' : signed/unsigned mismatch
      1>c:\users\lai ling yi\documents\github\ce2_tdd\textbuddy++\tb++.cpp(97): warning C4018: '<' : signed/unsigned mismatch
-     1>c:\users\lai ling yi\documents\github\ce2_tdd\textbuddy++\tb++.cpp(120): error C3867: 'std::vector<_Ty>::begin': function call missing argument list; use '&std::vector<_Ty>::begin' to create a pointer to member
-                 with
-                 [
-                     _Ty=std::string
-                 ]
-     1>c:\users\lai ling yi\documents\github\ce2_tdd\textbuddy++\tb++.cpp(124): error C2664: 'const std::basic_string<_Elem,_Traits,_Alloc> &std::vector<_Ty>::at(unsigned int) const' : cannot convert parameter 1 from 'std::_Vector_iterator<_Myvec>' to 'unsigned int'
-                 with
-                 [
-                     _Elem=char,
-                     _Traits=std::char_traits<char>,
-                     _Alloc=std::allocator<char>,
-                     _Ty=std::string
-                 ]
-                 and
-                 [
-                     _Myvec=std::_Vector_val<std::_Simple_types<std::basic_string<char,std::char_traits<char>,std::allocator<char>>>>
-                 ]
-                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-     1>c:\users\lai ling yi\documents\github\ce2_tdd\textbuddy++\tb++.cpp(190): warning C4018: '<' : signed/unsigned mismatch
-     1>Done Building Project "C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\TextBuddy++\TextBuddy++.vcxproj" (Build target(s)) -- FAILED.
+     1>c:\users\lai ling yi\documents\github\ce2_tdd\textbuddy++\tb++.cpp(191): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\lai ling yi\documents\github\ce2_tdd\textbuddy++\tb++.cpp(129): warning C4715: 'TextBuddy::searchFile' : not all control paths return a value
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\Debug\TextBuddy++.lib" /NOLOGO Debug\TB++.obj
+         TextBuddy++.vcxproj -> C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\Debug\TextBuddy++.lib
+     1>Done Building Project "C:\Users\Lai ling Yi\Documents\GitHub\CE2_TDD\TextBuddy++\TextBuddy++\TextBuddy++.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:01.45
+Time Elapsed 00:00:02.43

@@ -122,9 +122,8 @@ string TextBuddy:: searchFile(string word){
 		size_t found=text[i].find(word);
 		if(found!=string::npos) {
 			count++;
+			return text[i];
 		}
-
-		
 	}
 		
 }
