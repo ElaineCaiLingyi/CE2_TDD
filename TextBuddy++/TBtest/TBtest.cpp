@@ -36,9 +36,15 @@ namespace TBtest {
 			tb.text.push_back("monkey");
 			tb.text.push_back("elephant");
 			tb.text.push_back("hedgehog");
+			
+			string expected0="cat";
+			string expected1="dog";
 
 			//test case 1
 			tb.sortFile();
+			Assert::AreEqual(expected0,tb.text[0]);
+			Assert::AreEqual(expected1,tb.text[0]);
+
 		
 		}
 
