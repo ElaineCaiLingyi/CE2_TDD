@@ -42,6 +42,7 @@ public:
 		static const string MESSAGE_INVALID_ENTRY;
 		static const string MESSAGE_ERROR_DELETE;
 		static const string MESSAGE_ALL_SORTED;
+		static const string MESSAGE_CANT_BE_FOUND;
 
 		string MESSAGE_LINE_ADDED(string);
 		string MESSAGE_LINE_DELETED (string);

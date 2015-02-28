@@ -17,6 +17,7 @@ const string TextBuddy:: MESSAGE_COMMAND = "command: ";
 const string TextBuddy:: MESSAGE_INVALID_ENTRY = "ERROR: Invalid entry";
 const string TextBuddy:: MESSAGE_ERROR_DELETE = "ERROR: Cannot delete as it does not exist";
 const string TextBuddy:: MESSAGE_ALL_SORTED = "All lines are sorted alphabetically";
+const string TextBuddy:: MESSAGE_CANT_BE_FOUND = "The word cannot be found\n";
 
 string TextBuddy:: MESSAGE_LINE_ADDED(string input){
 
@@ -129,7 +130,7 @@ string TextBuddy:: searchFile(string word){
 	}
 
 	if (count==0){
-		return "The word cannot be found\n";
+		return MESSAGE_CANT_BE_FOUND;
 	}
 	else { 
 		return oss.str();
