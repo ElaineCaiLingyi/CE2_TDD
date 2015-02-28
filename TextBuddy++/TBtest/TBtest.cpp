@@ -37,6 +37,7 @@ namespace TBtest {
 			tb.text.push_back("monkey");
 			tb.text.push_back("elephant");
 			tb.text.push_back("hedgehog");
+			tb.text.push_back("monkeyy");
 			
 			//mannually rearranged
 			string expected0="cat";
