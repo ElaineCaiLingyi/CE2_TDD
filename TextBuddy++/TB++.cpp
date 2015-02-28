@@ -116,11 +116,17 @@ void TextBuddy:: sortFile(){
 }
 
 string TextBuddy:: searchFile(string word){
-
+	
+	int count=0;
 	for (int i=0;i<_numberoflines;i++){
-	}
+		size_t found=text[i].find(word);
+		if(found!=string::npos) {
+			count++;
+		}
 
-	return "test";
+		
+	}
+		
 }
 
 
