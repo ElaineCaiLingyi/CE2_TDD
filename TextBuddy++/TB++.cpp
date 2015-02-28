@@ -115,6 +115,14 @@ void TextBuddy:: sortFile(){
 
 }
 
+string TextBuddy:: searchFile(string word){
+
+	for (int i=0;i<_numberoflines;i++){
+	}
+
+	return "test";
+}
+
 
 void TextBuddy:: identifyCommandType(string command){
 

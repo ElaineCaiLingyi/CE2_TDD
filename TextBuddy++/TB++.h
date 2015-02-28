@@ -35,6 +35,7 @@ public:
 		void displayAll();
 		void clearAll();
 		void sortFile();
+		string searchFile(string);
 
 		//removal of magic strings through all these:
 		static const string MESSAGE_COMMAND;

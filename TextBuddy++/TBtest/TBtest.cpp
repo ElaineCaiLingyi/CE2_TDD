@@ -64,22 +64,20 @@ namespace TBtest {
 		
 		}
 
+		TEST_METHOD(SearchTest){
+		
+			//assuming that the user inputs are all in lower cases
+			TextBuddy tb("Filename.txt");
+			tb.text.push_back("cat says: meow I wanna eat fish");
+			tb.text.push_back("monkey climbs over the tree");
+			tb.text.push_back("dog barks happily");
+
+			//test case 1
+			string expected="dog barks happily";
+			Assert::AreEqual(expected, tb.searchFile("bark"));
+
+		
+		}
+
 	};
 }
-
-
-
-/* public:
-TEST_METHOD(testTotalSalary){
-Payroll* p = new Payroll();
-p->setSalaryManager(new SalaryManagerStub());
-//test case 1
-p->setEmployees(new std::string[2]{"E001", "E002"}, 2);
-Assert::AreEqual(p->totalSalary(), 6400);
-//test case 2
-p->setEmployees(new std::string[1]{"E001"}, 1);
-Assert::AreEqual(p->totalSalary(), 2300);
-//more tests…
-delete p;
-}
-};*/
