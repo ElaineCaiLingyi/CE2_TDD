@@ -107,6 +107,8 @@ void TextBuddy:: clearAll(){
 
 void TextBuddy:: sortFile(){
 
+	std::sort(text.begin(),text.end());  
+
 }
 
 
