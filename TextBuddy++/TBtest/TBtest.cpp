@@ -30,6 +30,7 @@ namespace TBtest {
 
 		TEST_METHOD(SortTest) {
 			
+			//assuming that the user inputs are all in lower cases
 			TextBuddy tb("Filename.txt");
 			tb.text.push_back("cat");
 			tb.text.push_back("dog");

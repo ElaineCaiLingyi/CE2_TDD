@@ -4,6 +4,7 @@
 /*assumptions: 
 1) deletion happens after display. ie. the user knows what he is deleting
 2) cases of the command matters. --> lower case
+3) cases of user input --> lower case
 
 important note:
 The file is saved to the disk after each user operation (in the case of crashes) 
