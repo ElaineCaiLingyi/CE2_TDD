@@ -88,6 +88,10 @@ namespace TBtest {
 			string expected3="The word cannot be found\n";
 			Assert::AreEqual(expected3, tb.searchFile("sunshine"));
 
+			//test case 4 -> findind a word in an empty file
+			tb.clearAll();
+			string expected4="The word cannot be found\n";
+			Assert::AreEqual(expected4, tb.searchFile("cat"));
 
 		}
 
