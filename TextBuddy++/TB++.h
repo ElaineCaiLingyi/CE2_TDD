@@ -12,7 +12,7 @@ using namespace std;
 
 class TextBuddy {
 
-//private attributes for use in the class itself
+//private attributes for use in the class itself-> changed to public for unit testing
 public:
 	    string _filename;
 		vector<string> text;

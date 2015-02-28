@@ -177,9 +177,13 @@ void TextBuddy:: executeCommand(string command){
 			deleteLine();
 		}
 			break;
-	    case 3: displayAll();
+	    case 3: {
+			displayAll();
+		}
 			break;
-		case 4: clearAll();
+		case 4: {
+			clearAll();
+		}
 			break;
 		case 5: {
 			 writeFile();
