@@ -1,0 +1,39 @@
+#include "stdafx.h"
+#include "CppUnitTest.h"
+
+using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+namespace TBtest {
+
+	TEST_CLASS(TBtest) {
+	
+	public:
+		
+		TEST_METHOD(ConstructorTest) {
+				
+			TextBuddy tb("filename.txt");
+			string expected="filename.txt";
+			Assert::AreEqual(expected, tb._filename); 
+			Assert::IsTrue (tb._numberoflines==0);
+		}
+
+		TEST_METHOD(AddTest) {
+
+			TextBuddy tb("meow.txt");
+			tb.addLine("foxJumps");
+			string expected= "foxJumps";
+			Assert::AreEqual(expected,tb.text[0]);
+		}
+
+		TEST_METHOD(ClearTest) {
+
+			TextBuddy tb ("clear.txt");
+			tb.addLine(" wooof");
+			tb.addLine(" here comes the dog");
+			tb.clearAll();
+			string expected= "all content deleted from clear.txt\n";
+			Assert::AreEqual(expected,tb.MESSAGE_ALL_CLEARED());
+		}
+
+	};
+}

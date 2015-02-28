@@ -1,0 +1,18 @@
+add little frog
+display
+add swim in the lake
+add jump out of water
+display
+delete 2
+display
+delete 4
+try wrong entry
+add meow meow
+add here comes the cat
+delete 1
+clear
+add hehehe
+add hahaha
+add hohoho
+delete 3
+exit

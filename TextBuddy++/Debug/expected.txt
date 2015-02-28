@@ -1,0 +1,24 @@
+Welcome to TextBuddy. FILE.txt is ready for use
+command: added to FILE.txt: "little frog"
+command: 1. little frog
+command: added to FILE.txt: "swim in the lake"
+command: added to FILE.txt: "jump out of water"
+command: 1. little frog
+2. swim in the lake
+3. jump out of water
+command: deleted from FILE.txt: "swim in the lake"
+command: 1. little frog
+2. jump out of water
+command: ERROR: Cannot delete as it does not exist
+command: ERROR: Invalid entry
+command: ERROR: Invalid entry
+command: ERROR: Invalid entry
+command: added to FILE.txt: "meow meow"
+command: added to FILE.txt: "here comes the cat"
+command: deleted from FILE.txt: "little frog"
+command: all content deleted from FILE.txt
+command: added to FILE.txt: "hehehe"
+command: added to FILE.txt: "hahaha"
+command: added to FILE.txt: "hohoho"
+command: deleted from FILE.txt: "hohoho"
+command: 

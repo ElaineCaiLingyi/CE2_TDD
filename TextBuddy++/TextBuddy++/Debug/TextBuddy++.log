@@ -1,0 +1,16 @@
+﻿Build started 2/28/2015 12:42:17 PM.
+     1>Project "C:\Users\Lai ling Yi\Documents\CS2103\TextBuddy++\TextBuddy++\TextBuddy++.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ..\TB++.cpp
+         TB++.cpp
+     1>c:\users\lai ling yi\documents\cs2103\textbuddy++\tb++.cpp(79): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\lai ling yi\documents\cs2103\textbuddy++\tb++.cpp(95): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\lai ling yi\documents\cs2103\textbuddy++\tb++.cpp(165): warning C4018: '<' : signed/unsigned mismatch
+       Lib:
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Lai ling Yi\Documents\CS2103\TextBuddy++\Debug\TextBuddy++.lib" /NOLOGO Debug\TB++.obj
+         TextBuddy++.vcxproj -> C:\Users\Lai ling Yi\Documents\CS2103\TextBuddy++\Debug\TextBuddy++.lib
+     1>Done Building Project "C:\Users\Lai ling Yi\Documents\CS2103\TextBuddy++\TextBuddy++\TextBuddy++.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.23
